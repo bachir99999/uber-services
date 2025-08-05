@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/uber-services/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/uber-services/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/uber-services",
+  "projects": {
+    "logging-services": {
+      "type": "application",
+      "root": "apps/logging-services",
+      "entryFile": "main",
+      "sourceRoot": "apps/logging-services/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/logging-services/tsconfig.app.json"
+      }
+    },
+    "ridder-services": {
+      "type": "application",
+      "root": "apps/ridder-services",
+      "entryFile": "main",
+      "sourceRoot": "apps/ridder-services/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/ridder-services/tsconfig.app.json"
+      }
+    },
+    "uber-services": {
+      "type": "application",
+      "root": "apps/uber-services",
+      "entryFile": "main",
+      "sourceRoot": "apps/uber-services/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/uber-services/tsconfig.app.json"
+      }
+    }
+  }
+}
