@@ -21,4 +21,4 @@ export class RiderCoordinates {
     timestamp: Date;
 }
 
-export const RiderCoordinatesFactory = SchemaFactory.createForClass(RiderCoordinates);
+export const RiderCoordinatesSchema = SchemaFactory.createForClass(RiderCoordinates);
